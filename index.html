@@ -1,193 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-
-     <!-- Fontes do Google -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
-     <!-- Fonte do Google - Poppins -->
-     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Vinicius Rodrigues">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto Portfólio" />
+    <meta name="author" content="Vinicius Rodrigues" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="./assets/img/favicon.svg" />
-    
-    <!--  Link para a Folha de Estilos CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Portfólio do Vinicius</title>
-</head>
+  </head>
 
-<body>
-
-    <!-- Cabeçalho da Página -->
+  <body>
     <header class="flex menu_container">
-
-        <div id="header_content" class="menu_content">
-
-            <!-- Título do Cabeçalho -->
-            <div id="titulo">
-                <a href="#">Universo</a>
-            </div>
-
-            <!-- Menu -->
-            <div id="menu" class="flex">
-                <nav>
-                    <!-- Marcadores não Ordenados para criar as opções do menu -->
-                    <ul class="flex menu_list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div id="header_content" class="menu_content">
+        <div id="titulo">
+          <a href="#">Vinicius Rodrigues</a>
         </div>
 
+        <div id="menu" class="flex">
+          <nav>
+            <ul class="flex menu_list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <!-- Seção Principal da Página -->
     <main>
+      <section id="home" class="flex home_container">
+        <article id="home_texto" class="flex home_content">
+          <h4>Bem-vindo ao Novo Universo</h4>
+          <h1>Mundos diferentes para pessoas diferentes</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            ipsum eum sapiente maiores adipisci aperiam sint dignissimos
+            molestias voluptas expedita doloribus consequatur saepe maxime,
+            tempore modi eligendi, eius, eos itaque.
+          </p>
+          <a
+            href="https://github.com/Vinicius-Rodriguess"
+            target="_blank"
+            class="botao"
+          >
+            Explorar
+          </a>
+        </article>
 
-        <!-- Seção home -->
-        <section id="home" class="flex home_container">
+        <article id="home_imagem" class="flex home_content">
+          <img
+            src="./assets/img/astronauta.svg"
+            alt="Capacete de Astronauta Animado"
+          />
+        </article>
+      </section>
 
-            <!-- Texto da Seção Home -->
-            <article id="home_texto" class="flex home_content">
+      <section id="about" class="flex sobre_container">
+        <img src="./assets/img/Vinicius Rodrigues  (4).jpg" alt="Foto do Perfil do Github" />
 
-                <h4>Bem-vindo ao Novo Universo</h4>
-                <h1>Mundos diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsum eum sapiente maiores adipisci
-                    aperiam sint dignissimos molestias voluptas expedita doloribus consequatur saepe maxime, tempore
-                    modi eligendi, eius, eos itaque.</p>
-                <a 
-                    href="https://github.com/Vinicius-Rodriguess" 
-                    target="_blank"
-                    class="botao"
-                >
-                    Explorar
-                </a>
+        <article id="about_texto">
+          <h2>Sobre mim</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil
+            magni doloremque sint, qui facere fugit sequi optio molestiae sunt!
+            Maiores sapiente atque nulla mollitia earum delectus nostrum natus
+            architecto?
+          </p>
 
-            </article>
-
-            <!-- Imagem da Seção Home -->
-            <article id="home_imagem" class="flex home_content">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
-            </article>
-
-        </section>
-
-        <!-- Seção sobre -->
-        <section id="about" class="flex sobre_container">
-
-            <!-- Imagem da Seção Sobre -->
-            <img 
-                src="./assets/img/user_01.svg" 
-                alt="Foto do Perfil do Github"
+          <div id="about_github" class="flex sobre_github">
+            <a
+              href="https://github.com/Vinicius-Rodriguess"
+              target="_blank"
+              class="botao"
             >
+              Github
+            </a>
+            <p>200 Seguidores</p>
+            <p>20 Repositórios</p>
+          </div>
+        </article>
+      </section>
 
-            <!-- Texto da Seção Sobre -->
-            <article id="about_texto">
-                <h2>Sobre mim</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil magni doloremque sint, qui facere fugit sequi optio molestiae sunt! Maiores sapiente atque nulla mollitia earum delectus nostrum natus architecto?</p>
+      <section id="contact" class="contato_container">
+        <article id="redes_sociais" class="contato_content">
+          <h4>Contate-me</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+            quae voluptas error omnis, deleniti molestiae dolores earum incidunt
+            sint minus magni sunt maiores minima, cumque quam numquam officia
+            obcaecati perspiciatis.
+          </p>
 
-                <!-- Detalhes do Github -->
-                <div id="about_github" class="flex sobre_github">
-                    <a 
-                        href="https://github.com/Vinicius-Rodriguess" 
-                        target="_blank"
-                        class="botao"
-                    >
-                        Github
-                    </a>
-                    <p>200 Seguidores</p>
-                    <p>20 Repositórios</p>
-                </div>
+          <div id="icones_redes_sociais" class="social_container">
+            <a href="" target="_blank">
+              <img
+                src="./assets/img/linkedin.svg"
+                alt="Logo do LinkedIn"
+                class="social_icon"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                src="./assets/img/github.svg"
+                alt="Logo do Github"
+                class="social_icon"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                src="./assets/img/instagram.svg"
+                alt="Logo do Instagram"
+                class="social_icon"
+              />
+            </a>
+          </div>
+        </article>
 
-            </article>
-        </section>
+        <form action="#" method="POST">
+          <label for="nome">Nome</label>
+          <input
+            id="nome"
+            type="text"
+            name="nome"
+            placeholder="Digite o seu nome"
+          />
+          <span id="txtNome"></span>
 
-        <!-- Seção de Contato -->
-        <section id="contact">
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            placeholder="Digite o endereço do seu e-mail"
+          />
+          <span id="txtEmail"></span>
 
-            <h4>Contate-me</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae voluptas error omnis, deleniti molestiae dolores earum incidunt sint minus magni sunt maiores minima, cumque quam numquam officia obcaecati perspiciatis.</p>
+          <label for="assunto">Assunto</label>
+          <input
+            id="assunto"
+            type="text"
+            name="assunto"
+            placeholder="Digite o assunto da mensagem"
+          />
+          <span id="txtAssunto"></span>
 
-            <!-- Redes Sociais -->
-            <div id="icones_redes_sociais">
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/linkedin.svg"
-                        alt="Logo do LinkedIn"
-                    >
-                </a>
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/github.svg"
-                        alt="Logo do Github"
-                    >
-                </a>
-                <a href="" target="_blank">
-                    <img 
-                        src="./assets/img/instagram.svg"
-                        alt="Logo do Instagram"
-                    >
-                </a>
-            </div>
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Digite a sua mensagem"
+          ></textarea>
 
-            <!-- Formulário de Contato -->
-            <form action="" method="POST">
-
-                <label for="nome">Nome</label>
-                <input 
-                    id="nome" 
-                    type="text" 
-                    name="nome" 
-                    placeholder="Digite o seu nome"
-                >
-                <span id="txtNome"></span>
-
-                <label for="email">E-mail</label>
-                <input 
-                    id="email" 
-                    type="text" 
-                    name="email" 
-                    placeholder="Digite o endereço do seu e-mail"
-                >
-                <span id="txtEmail"></span>
-
-                <label for="assunto">Assunto</label>
-                <input 
-                    id="assunto" 
-                    type="text" 
-                    name="assunto" 
-                    placeholder="Digite o assunto da mensagem"
-                >
-                <span id="txtAssunto"></span>
-
-                <label for="mensagem">Mensagem</label>
-                <textarea
-                    id="mensagem"
-                    name="mensagem"
-                    placeholder="Digite a sua mensagem"
-                >
-                </textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-        </section>
-
+          <button type="submit" class="botao">Enviar</button>
+        </form>
+      </section>
     </main>
 
-    <!-- Rodapé da Página -->
-    <footer>
-        Feito com 🧡 por Vinicius Rodrigues - 2025
-    </footer>
-</body>
-
+    <footer>Feito por Vinicius Rodrigues - &copy;2025</footer>
+  </body>
 </html>
