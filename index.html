@@ -14,6 +14,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="./assets/img/favicon.svg" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="./assets/js/script.js"></script>
     <title>Portfólio do Vinicius</title>
   </head>
 
@@ -64,31 +65,7 @@
         </article>
       </section>
 
-      <section id="about" class="flex sobre_container">
-        <img src="./assets/img/Vinicius Rodrigues  (4).jpg" alt="Foto do Perfil do Github" />
-
-        <article id="about_texto">
-          <h2>Sobre mim</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil
-            magni doloremque sint, qui facere fugit sequi optio molestiae sunt!
-            Maiores sapiente atque nulla mollitia earum delectus nostrum natus
-            architecto?
-          </p>
-
-          <div id="about_github" class="flex sobre_github">
-            <a
-              href="https://github.com/Vinicius-Rodriguess"
-              target="_blank"
-              class="botao"
-            >
-              Github
-            </a>
-            <p>200 Seguidores</p>
-            <p>20 Repositórios</p>
-          </div>
-        </article>
-      </section>
+      <section id="about" class="flex sobre_container"></section>
 
       <section id="contact" class="contato_container">
         <article id="redes_sociais" class="contato_content">
@@ -125,7 +102,11 @@
           </div>
         </article>
 
-        <form action="#" method="POST">
+        <form action="https://formsubmit.co/ffe921aaffaaba3bf336c682e83c3ab3" method="POST" id="formulario">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+
+          <input type="hidden" name="_captcha" value="false">
+
           <label for="nome">Nome</label>
           <input
             id="nome"
