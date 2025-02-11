@@ -1,35 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-}
-
-:root {
-  --blue-200: #813eeb;
-  --blue-500: #7631e5;
-  --blue-800: #6d20ea;
-  --gray-200: #e9e9e9;
-  --gray-400: #505861;
-  --black-800: #171717;
-  --white: #f9f9f9;
-}
-
-html {
-  width: 100%;
-  height: 100vh;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--gray-200);
-  color: var(--black-800);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url(./global.css);
+@import url(./animations.css);
+@import url(./stalker.css);
 
 button,
 a {
@@ -38,20 +10,20 @@ a {
 
 .botao {
   padding: 0.5rem 2rem;
-  border: 1px solid var(--blue-800);
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  color: var(--blue-800);
-  background: none;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   transition: 0.2s ease all;
+  background: var(--black);
+  color: var(--white);
+  border: none;
 }
 
 .botao:hover {
-  color: var(--white);
-  background-color: var(--blue-800);
+  background: var(--white);
+  color: var(--black);
 }
 
 .flex {
@@ -63,24 +35,25 @@ a {
 /* Estilização - Seção Header */
 
 .menu_container {
+  background: linear-gradient(90deg, var(--blue-dark), var(--blue-light));
   position: sticky;
   top: 0;
   width: 100%;
   height: 5rem;
   border-bottom: 1px solid var(--blue-500);
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  background-color: var(--blue-800);
   filter: opacity(0.9);
 }
 
 .menu_container a {
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   transition: 0.2s ease all;
+  font-size: 1.2rem;
 }
 
 .menu_container a:hover {
-  color: var(--gray-200);
+  color: var(--white);
 }
 
 .menu_content {
@@ -113,12 +86,13 @@ a {
   max-width: 1120px;
   margin: 1rem auto;
   padding: 0 1rem;
+  gap: 5rem;
 }
 
 .home_container p,
 h1,
 h4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -149,13 +123,12 @@ h4 {
   width: 75%;
 }
 
-/* Estilização da Seção Home - Página Sucess */
-
 .home_container_sucess {
   height: calc(100vh - 12.5rem);
-  max-width: 1120px;
+  width: 100%;
   margin: 1rem auto;
   padding: 0 1rem;
+  background-color: rgb(238, 252, 255);
 }
 
 #home_sucess {
@@ -169,7 +142,7 @@ h4 {
 }
 
 #home_sucess h4 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   padding: 1rem;
 }
 
@@ -180,15 +153,16 @@ h4 {
   margin: -1.25rem auto;
   padding: 0 1rem;
   height: 100vh;
+  gap: 5rem;
 }
 
 .sobre_container img {
-  width: 70%;
+  width: 40%;
   margin: 1rem;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  height: 50%;
-  border: 2px solid var(--blue-500);
   border-radius: 50%;
+  border: 2px solid var(--blue-light);
+  background: linear-gradient(135deg, var(--blue-light), var(--gray-dark));
 }
 
 .sobre_container h2 {
@@ -201,6 +175,7 @@ h4 {
 .sobre_container p {
   margin: 1rem 0;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .sobre_github {
@@ -218,22 +193,26 @@ h4 {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
+  gap: 5rem;
   max-width: 1120px;
   margin: 4rem auto 2rem;
   padding: 0 2rem;
+  color: var(--black);
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .contato_container h4 {
   margin: 1rem 0;
   font-size: 2rem;
   font-weight: 700;
+  color: var(--black);
 }
 
 .contato_content {
   flex-direction: column;
   margin: 4rem 0 0 0;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 .contato_content p {
@@ -255,8 +234,7 @@ h4 {
 }
 
 .social_icon:hover {
-  filter: brightness(0) saturate(100%) invert(20%) sepia(24%) saturate(4557%)
-    hue-rotate(242deg) brightness(89%) contrast(108%);
+  filter: brightness(1.1) saturate(120%);
 }
 
 /* Estilização da Seção Form*/
@@ -305,8 +283,8 @@ footer {
   font-weight: bold;
   text-align: center;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  color: var(--white);
-  background-color: var(--blue-500);
+  color: rgb(243, 243, 243);
+  background-color: rgb(26, 26, 26);
   filter: opacity(0.9);
 }
 
@@ -459,4 +437,25 @@ footer {
     margin: 1rem 0 0 0;
     padding: 1rem;
   }
+}
+
+#whatsApp {
+  width: 4.5rem;
+  animation: .8s whatsapp infinite alternate;
+  position: fixed;
+  z-index: 4;
+  cursor: pointer;
+  bottom: 2.5rem;
+  right: 2.5rem;
+}
+
+.btn-change-theme {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+#select-language {
+  padding: 0.2rem;
+  margin-left: 1rem;
 }

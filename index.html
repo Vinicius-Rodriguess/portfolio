@@ -13,12 +13,23 @@
     <meta name="author" content="Vinicius Rodrigues" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <link rel="icon" href="./assets/img/favicon.svg" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script defer src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script defer src="./assets/js/main.js" type="module"></script>
     <title>Portfólio do Vinicius</title>
   </head>
 
   <body>
+    <!-- circle  -->
+    <div id="stalker"></div>
+
+    <!-- Icon WhatsApp -->
+    <a
+      href="https://api.whatsapp.com/send/?phone=5511955959491&text=Gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"
+      target="_blank"
+    >
+      <img id="whatsApp" src="./assets/img/whatsApp.png" alt="Whatsapp"
+    /></a>
+
     <header class="flex menu_container">
       <div id="header_content" class="menu_content">
         <div id="titulo">
@@ -28,9 +39,9 @@
         <div id="menu" class="flex">
           <nav>
             <ul class="flex menu_list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#contact">Contato</a></li>
+              <li><a href="#" translate="home">Home</a></li>
+              <li><a href="#about" translate="sobre">Sobre</a></li>
+              <li><a href="#contact" translate="contato">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -39,25 +50,32 @@
 
     <main>
       <section id="home" class="flex home_container">
-        <article id="home_texto" class="flex home_content">
-          <h4>Bem-vindo ao Novo Universo</h4>
-          <h1>Mundos diferentes para pessoas diferentes</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-            ipsum eum sapiente maiores adipisci aperiam sint dignissimos
-            molestias voluptas expedita doloribus consequatur saepe maxime,
-            tempore modi eligendi, eius, eos itaque.
+        <article id="home_texto" class="flex home_content" data-animate="left">
+          <h4 translate="bemVindoAoMeuPortfolio">Bem-vindo ao meu Portfolio</h4>
+          <h1 translate="conhecaMeuTrabalhoEProjetos">
+            Conheça Meu Trabalho e Projetos
+          </h1>
+          <p translate="esteEhMeuPortfolioOnline">
+            Este é o meu portfólio online, onde apresento um pouco sobre mim,
+            meus projetos e formas de contato. Aqui, você pode explorar meu
+            trabalho, conhecer minhas habilidades e acessar meus repositórios no
+            GitHub.
           </p>
           <a
             href="https://github.com/Vinicius-Rodriguess"
             target="_blank"
             class="botao"
+            translate="explorar"
           >
             Explorar
           </a>
         </article>
 
-        <article id="home_imagem" class="flex home_content">
+        <article
+          id="home_imagem"
+          class="flex home_content"
+          data-animate="right"
+        >
           <img
             src="./assets/img/astronauta.svg"
             alt="Capacete de Astronauta Animado"
@@ -65,34 +83,68 @@
         </article>
       </section>
 
-      <section id="about" class="flex sobre_container"></section>
+      <section id="about" class="flex sobre_container">
+        <img id="github-img" data-animate="left" />
+
+        <article id="about_texto" data-animate="right">
+          <h2 translate="sobreMim">Sobre mim</h2>
+          <p translate="olamEuSouVinicius">
+            Olá! Sou Vinicius Rodrigues, Desenvolvedor Full Stack JavaScript.
+            Minha trajetória profissional começou em áreas administrativas, onde
+            desenvolvi habilidades como organização, trabalho em equipe e
+            comunicação. No entanto, meu verdadeiro interesse sempre foi a
+            tecnologia. Atualmente, estou finalizando minha graduação em Análise
+            e Desenvolvimento de Sistemas e me especializando em Back-End com
+            NestJS. Busco aprimorar minhas habilidades e encarar novos desafios
+            no desenvolvimento web.
+          </p>
+
+          <div id="about_github" class="flex sobre_github">
+            <a id="github-url" target="_blank" class="botao"> Github </a>
+            <p>
+              <span id="github-followers"></span>
+              <span translate="seguidores">Seguidores</span>
+            </p>
+            <p>
+              <span id="github-public_repos"></span>
+              <span translate="repositorios">Repositórios</span>
+            </p>
+          </div>
+        </article>
+      </section>
 
       <section id="contact" class="contato_container">
-        <article id="redes_sociais" class="contato_content">
-          <h4>Contate-me</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            quae voluptas error omnis, deleniti molestiae dolores earum incidunt
-            sint minus magni sunt maiores minima, cumque quam numquam officia
-            obcaecati perspiciatis.
+        <article id="redes_sociais" class="contato_content" data-animate="left">
+          <h4 translate="contateMe">Contate-me</h4>
+          <p translate="estouSempreAberto">
+            Estou sempre aberto a novas conexões, oportunidades e colaborações.
+            Se quiser trocar ideias sobre tecnologia, conhecer mais sobre meus
+            projetos ou simplesmente bater um papo, entre em contato comigo
+            pelas redes abaixo!
           </p>
 
           <div id="icones_redes_sociais" class="social_container">
-            <a href="" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/vinicius-rodrigues2004/"
+              target="_blank"
+            >
               <img
                 src="./assets/img/linkedin.svg"
                 alt="Logo do LinkedIn"
                 class="social_icon"
               />
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/Vinicius-Rodriguess" target="_blank">
               <img
                 src="./assets/img/github.svg"
                 alt="Logo do Github"
                 class="social_icon"
               />
             </a>
-            <a href="" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/vinicius-rodrigues2004/"
+              target="_blank"
+            >
               <img
                 src="./assets/img/instagram.svg"
                 alt="Logo do Instagram"
@@ -102,50 +154,52 @@
           </div>
         </article>
 
-        <form action="https://formsubmit.co/ffe921aaffaaba3bf336c682e83c3ab3" method="POST" id="formulario">
-          <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
-
-          <input type="hidden" name="_captcha" value="false">
-
-          <label for="nome">Nome</label>
+        <form
+          action="https://formsubmit.co/ffe921aaffaaba3bf336c682e83c3ab3"
+          method="POST"
+          id="formulario"
+          data-animate="right"
+        >
           <input
-            id="nome"
-            type="text"
-            name="nome"
-            placeholder="Digite o seu nome"
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/sucess.html"
           />
+
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="nome" translate="nome">Nome</label>
+          <input id="nome" type="text" name="nome" />
           <span id="txtNome"></span>
 
           <label for="email">E-mail</label>
-          <input
-            id="email"
-            type="text"
-            name="email"
-            placeholder="Digite o endereço do seu e-mail"
-          />
+          <input id="email" type="text" name="email" />
           <span id="txtEmail"></span>
 
-          <label for="assunto">Assunto</label>
-          <input
-            id="assunto"
-            type="text"
-            name="assunto"
-            placeholder="Digite o assunto da mensagem"
-          />
+          <label for="assunto" translate="assunto">Assunto</label>
+          <input id="assunto" type="text" name="assunto" />
           <span id="txtAssunto"></span>
 
-          <label for="mensagem">Mensagem</label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            placeholder="Digite a sua mensagem"
-          ></textarea>
+          <label for="mensagem" translate="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem"></textarea>
 
-          <button type="submit" class="botao">Enviar</button>
+          <button type="submit" class="botao" translate="enviar">Enviar</button>
         </form>
       </section>
     </main>
 
-    <footer>Feito por Vinicius Rodrigues - &copy;2025</footer>
+    <footer class="footer" data-animate="top">
+      <span translate="feitoPorViniciusRodrigues"
+        >Feito por Vinicius Rodrigues - &copy;2025</span
+      >
+
+      <i class="btn-change-theme"></i>
+
+      <select id="select-language">
+        <option value="0">Português</option>
+        <option value="1">Inglês</option>
+        <option value="2">Espanhol</option>
+      </select>
+    </footer>
   </body>
 </html>
