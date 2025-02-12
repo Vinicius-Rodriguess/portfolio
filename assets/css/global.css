@@ -8,7 +8,6 @@
     font-family: "Poppins", sans-serif;
 }
   
-  
 :root.light {
     --blue-light: #8C9EFF;  
     --blue-dark: #6A7DFF;   
@@ -32,11 +31,4 @@ html {
     overflow-x: hidden;
     height: 100vh;
     scroll-behavior: smooth;
-}
-  
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(to bottom, var(--gray-light), var(--blue-light));
-    color: var(--black);
 }
