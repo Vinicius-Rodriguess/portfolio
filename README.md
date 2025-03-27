@@ -1,78 +1,63 @@
-# Projeto Portfólio Pessoal
+# 📝 **Portfolio Pessoal**
 
+Este repositório contém o código-fonte do meu site de portfólio pessoal, desenvolvido para apresentar informações sobre mim, meus projetos, habilidades e formas de contato.
 
-<div align="center">
-  <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" />
-  <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge" />
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge" />
-</div>
+---
 
-Este é o repositório do meu site portfólio pessoal, desenvolvido com HTML, CSS e JavaScript. O site inclui informações sobre mim, meus projetos, habilidades e formas de contato.
+## 🚀 **Funcionalidades**
 
+- Consumo da Api do Github para preenchimento dos dados.
+- Envio de Emails
+- Design responsivo para diferentes dispositivos (**Mobile First**).
+- **Modo escuro e claro** para melhor experiência do usuário.
+- **Animações** para uma interface mais dinâmica.
+- **Internacionalização** em três idiomas: **Português, Inglês e Espanhol**.
 
-## Tecnologias Utilizadas
+---
 
+## 🛠️ **Tecnologias Utilizadas**
 
 - **HTML**: Estrutura de conteúdo e marcação do site.
-
 - **CSS**: Estilização e layout das páginas.
-
 - **JavaScript**: Funcionalidades e interatividade do site.
 
+---
 
-## Executando Localmente
+## 🛠️ **Como Configurar o Projeto**
 
+<a href="https://vinicius-rodriguess.github.io/portfolio/" target="_blank">Clique aqui para testar o projeto!</a>
 
-Para visualizar o projeto localmente, siga as instruções abaixo:
+<img src="./assets/img/Captura de tela de 2025-03-27 14-23-00.png"/>
 
+Ou então:
 
-### Pré-requisitos
-
-
-- [Visual Studio Code](https://code.visualstudio.com/) (ou outro editor de sua preferência)
-
-- Extensão **Live Server** no VSCode
-
-
-### Passos
-
-
-1. Clone o repositório:
-
-  ```bash
-
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-
-```
-
-2. Abra o projeto no Visual Studio Code:
-
+1. Clone este repositório:
    ```bash
+   git clone https://github.com/Vinicius-Rodriguess/portfolio-pessoal.git
+   cd portfolio-pessoal
+   ```
 
-   code seu-repositorio
+2. Abra o arquivo `index.html` em um navegador para visualizar o site.
 
-```
+---
 
-3. No VSCode, abra um arquivo HTML do projeto (ex: `index.html`).
+## 💻 **Exemplo de Uso**
 
-4. Clique com o botão direito no editor e selecione **"Open with Live Server"**.  
+1. Acesse o site para visualizar minha apresentação, projetos e habilidades.
+2. Utilize a seção de contato para falar comigo.
+3. Navegue entre as seções para explorar minhas experiências.
 
-   - Alternativamente, você pode iniciar o **Live Server** através da barra de status do VSCode.
+---
 
+## ✅ **Melhorias Futuras**
 
-Isso abrirá o site em seu navegador padrão, e você poderá visualizar e testar as alterações em tempo real.
+- Implementação de um sistema de blog.
 
+---
 
-## Deploy
+## 👨‍💻 **Autor**
 
+**Vinicius Rodrigues**
 
-Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
-
-
-- [Portfólio Pessoal](https://vinicius-rodriguess.github.io/portfolio/)
-
-
-## Contribuindo
-
-
-Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, sinta-se à vontade para abrir um **pull request**.
+- GitHub: [Vinicius-Rodriguess](https://github.com/Vinicius-Rodriguess)
+- Email: rodrigues.vini.2004@gmail.com
